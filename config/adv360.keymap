@@ -28,15 +28,6 @@
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
         };
-
-        cmd_arrows: cmd_arrows {
-            compatible = "zmk,behavior-mod-morph";
-            label = "CMD_ARROWS";
-            bindings = <&kp>, <&kp>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_LGUI)>;
-        };
     };
 
     keymap {
@@ -54,11 +45,11 @@
 
         layer_colemak_dh {
             bindings = <
-&trans  &trans  &trans              &trans              &trans               &trans  &trans                                                                             &trans     &trans  &trans  &trans     &trans      &trans         &trans
-&trans  &kp Q   &kp W               &cmd_arrows F UP    &kp P                &kp B   &to 0                                                                              &trans     &kp J   &kp L   &kp U      &kp Y       &kp SEMICOLON  &trans
-&trans  &kp A   &cmd_arrows R LEFT  &cmd_arrows S DOWN  &cmd_arrows T RIGHT  &kp G   &trans         &kp LCMD    &kp LEFT_ALT        &kp RCMD         &kp RIGHT_CONTROL  &trans     &kp M   &kp N   &kp E      &kp I       &kp O          &trans
-&trans  &kp Z   &kp X               &kp C               &kp D                &kp V                              &trans              &trans                                         &kp K   &kp H   &kp COMMA  &kp PERIOD  &kp SLASH      &trans
-&trans  &trans  &trans              &trans              &trans                       &kp BACKSPACE  &kp DELETE  &kp LEFT_SHIFT      &kp RIGHT_SHIFT  &kp ENTER          &kp SPACE          &trans  &trans     &trans      &trans         &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                                                                             &trans     &trans  &trans  &trans     &trans      &trans         &trans
+&trans  &kp Q   &kp W   &kp F   &kp P   &kp B   &to 0                                                                              &trans     &kp J   &kp L   &kp U      &kp Y       &kp SEMICOLON  &trans
+&trans  &kp A   &kp R   &kp S   &kp T   &kp G   &trans         &kp LCMD    &kp LEFT_ALT        &kp RCMD         &kp RIGHT_CONTROL  &trans     &kp M   &kp N   &kp E      &kp I       &kp O          &trans
+&trans  &kp Z   &kp X   &kp C   &kp D   &kp V                              &trans              &trans                                         &kp K   &kp H   &kp COMMA  &kp PERIOD  &kp SLASH      &trans
+&trans  &trans  &trans  &trans  &trans          &kp BACKSPACE  &kp DELETE  &kp LEFT_SHIFT      &kp RIGHT_SHIFT  &kp ENTER          &kp SPACE          &trans  &trans     &trans      &trans         &trans
             >;
         };
 
