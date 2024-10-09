@@ -54,11 +54,11 @@
 
         layer_colemak_dh {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                                                                             &trans     &trans  &trans  &trans     &trans      &trans         &trans
-&trans  &kp Q   &kp W   &cmd_arrows F UP   &kp P   &kp B   &to 0                                                                              &trans     &kp J   &kp L   &kp U      &kp Y       &kp SEMICOLON  &trans
-&trans  &kp A   &cmd_arrows R LEFT   &cmd_arrows S DOWN   &cmd_arrows T RIGHT   &kp G   &trans         &kp LCMD    &kp LEFT_ALT        &kp RCMD         &kp RIGHT_CONTROL  &trans     &kp M   &kp N   &kp E      &kp I       &kp O          &trans
-&trans  &kp Z   &kp X   &kp C   &kp D   &kp V                              &trans              &trans                                         &kp K   &kp H   &kp COMMA  &kp PERIOD  &kp SLASH      &trans
-&trans  &trans  &trans  &trans  &trans          &kp BACKSPACE  &kp DELETE  &kp LEFT_SHIFT      &kp RIGHT_SHIFT  &kp ENTER          &kp SPACE          &trans  &trans     &trans      &trans         &trans
+&trans  &trans  &trans              &trans              &trans               &trans  &trans                                                                             &trans     &trans  &trans  &trans     &trans      &trans         &trans
+&trans  &kp Q   &kp W               &cmd_arrows F UP    &kp P                &kp B   &to 0                                                                              &trans     &kp J   &kp L   &kp U      &kp Y       &kp SEMICOLON  &trans
+&trans  &kp A   &cmd_arrows R LEFT  &cmd_arrows S DOWN  &cmd_arrows T RIGHT  &kp G   &trans         &kp LCMD    &kp LEFT_ALT        &kp RCMD         &kp RIGHT_CONTROL  &trans     &kp M   &kp N   &kp E      &kp I       &kp O          &trans
+&trans  &kp Z   &kp X               &kp C               &kp D                &kp V                              &trans              &trans                                         &kp K   &kp H   &kp COMMA  &kp PERIOD  &kp SLASH      &trans
+&trans  &trans  &trans              &trans              &trans                       &kp BACKSPACE  &kp DELETE  &kp LEFT_SHIFT      &kp RIGHT_SHIFT  &kp ENTER          &kp SPACE          &trans  &trans     &trans      &trans         &trans
             >;
         };
 
@@ -84,11 +84,11 @@
 
         layer_mod {
             bindings = <
-&none  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &none                                                   &trans                  &none  &none       &none       &none  &none  &none
-&none  &none         &none         &none         &none         &none         &bootloader                                             &bootloader             &none  &none       &none       &none  &none  &none
-&none  &none         &none         &none         &none         &none         &none        &tog 0  &none      &bt BT_CLR  &none       &rgb_ug RGB_MEFS_CMD 5  &none  &none       &none       &none  &none  &none
-&none  &none         &none         &none         &none         &none                              &none      &none                                           &none  &none       &none       &none  &none  &none
-&none  &none         &none         &none         &none                       &none        &tog 0  &none      &none       &bl BL_TOG  &rgb_ug RGB_TOG                &bl BL_INC  &bl BL_DEC  &none  &none  &none
+&none  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &none                                                       &trans                  &none  &none       &none       &none  &none  &none
+&none  &none         &none         &none         &none         &none         &bootloader                                                 &bootloader             &none  &none       &none       &none  &none  &none
+&none  &none         &none         &none         &none         &none         &none        &tog 0  &none      &bt BT_CLR      &none       &rgb_ug RGB_MEFS_CMD 5  &none  &none       &none       &none  &none  &none
+&none  &none         &none         &none         &none         &none                              &none      &none                                               &none  &none       &none       &none  &none  &none
+&none  &none         &none         &none         &none                       &none        &tog 0  &none      &bl BL_SET 100  &bl BL_TOG  &rgb_ug RGB_TOG                &bl BL_INC  &bl BL_DEC  &none  &none  &none
             >;
         };
     };
