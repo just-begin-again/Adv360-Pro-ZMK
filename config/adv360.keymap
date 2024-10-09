@@ -32,7 +32,7 @@
         cmd_arrows: cmd_arrows {
             compatible = "zmk,behavior-mod-morph";
             label = "CMD_ARROWS";
-            bindings = <&none>, <&none>;
+            bindings = <&kp>, <&kp>;
 
             #binding-cells = <0>;
             mods = <(MOD_LGUI)>;
